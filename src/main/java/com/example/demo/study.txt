@@ -1,0 +1,79 @@
+
+Mybatis ->
+1------>.ConfigurationClassBeanDefinitionReader :
+Registered bean definition for imported class 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration'
+2------>
+ o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+ a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration'
+ a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory()
+ a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionTemplate()
+3----->
+o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration; enhanced class name is: org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration$$EnhancerBySpringCGLIB$$1689bd51
+o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration' existing class 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration' with enhanced class 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration$$EnhancerBySpringCGLIB$$1689bd51'
+o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration; enhanced class name is: org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$33461f7e
+o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' existing class 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' with enhanced class 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$33461f7e'
+
+
+2018-05-24 01:23:36.947 DEBUG 8176 --- [           main] .s.c.a.CommonAnnotationBeanPostProcessor : Found init method on class [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration$$EnhancerBySpringCGLIB$$1689bd51]: public void org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration.afterPropertiesSet()
+2018-05-24 01:23:36.947 DEBUG 8176 --- [           main] .s.c.a.CommonAnnotationBeanPostProcessor : Registered init method on class [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration$$EnhancerBySpringCGLIB$$1689bd51]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@b54555b3
+2018-05-24 01:23:36.950 DEBUG 8176 --- [           main] .s.c.a.CommonAnnotationBeanPostProcessor : Invoking init method on bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration': public void org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration.afterPropertiesSet()
+2018-05-24 01:23:36.952 DEBUG 8176 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$33461f7e] - unable to determine constructor/method parameter names
+2018-05-24 01:23:36.963 DEBUG 8176 --- [           main] .s.c.a.CommonAnnotationBeanPostProcessor : Found init method on class [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$33461f7e]: public void org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.checkConfigFileExists()
+2018-05-24 01:23:36.963 DEBUG 8176 --- [           main] .s.c.a.CommonAnnotationBeanPostProcessor : Registered init method on class [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$33461f7e]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@c7c09702
+2018-05-24 01:23:36.967 DEBUG 8176 --- [           main] .s.c.a.CommonAnnotationBeanPostProcessor : Invoking init method on bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': public void org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.checkConfigFileExists()
+
+
+
+Druid
+
+2018-05-24 01:23:32.435 DEBUG 8176 --- [           main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidStatViewServletConfiguration'
+2018-05-24 01:23:32.436 DEBUG 8176 --- [           main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method com.alibaba.druid.spring.boot.autoconfigure.stat.DruidStatViewServletConfiguration.statViewServletRegistrationBean()
+2018-05-24 01:23:32.436 DEBUG 8176 --- [           main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidWebStatFilterConfiguration'
+2018-05-24 01:23:32.436 DEBUG 8176 --- [           main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method com.alibaba.druid.spring.boot.autoconfigure.stat.DruidWebStatFilterConfiguration.webStatFilterRegistrationBean()
+2018-05-24 01:23:32.436 DEBUG 8176 --- [           main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration'
+2018-05-24 01:23:32.447 DEBUG 8176 --- [           main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration.statFilter()
+2018-05-24 01:23:32.451 DEBUG 8176 --- [           main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure'
+2018-05-24 01:23:32.462 DEBUG 8176 --- [           main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource()
+
+
+
+2018-05-24 01:23:33.109 DEBUG 8176 --- [           main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure; enhanced class name is: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$1a1dc3c0
+2018-05-24 01:23:33.109 DEBUG 8176 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' existing class 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' with enhanced class 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$1a1dc3c0'
+
+
+2018-05-24 01:23:35.041 DEBUG 8176 --- [ost-startStop-1] o.s.b.w.s.ServletContextInitializerBeans : Added existing Servlet initializer bean 'statViewServletRegistrationBean'; order=2147483647, resource=class path resource [com/alibaba/druid/spring/boot/autoconfigure/stat/DruidStatViewServletConfiguration.class]
+2018-05-24 01:23:35.041 DEBUG 8176 --- [ost-startStop-1] o.s.b.w.s.ServletContextInitializerBeans : Added existing Filter initializer bean 'webStatFilterRegistrationBean'; order=2147483647, resource=class path resource [com/alibaba/druid/spring/boot/autoconfigure/stat/DruidWebStatFilterConfiguration.class]
+
+2018-05-24 01:23:35.179  INFO 8176 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+
+
+
+
+2018-05-24 01:23:35.812  INFO 8176 --- [           main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2018-05-24 01:23:35.891 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper]: AutowiredFieldElement for private org.springframework.boot.autoconfigure.jdbc.DataSourceProperties com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.basicProperties
+2018-05-24 01:23:35.891 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper]: AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addEncodingConvertFilter(com.alibaba.druid.filter.encoding.EncodingConvertFilter)
+2018-05-24 01:23:35.891 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper]: AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addSlf4jLogFilter(com.alibaba.druid.filter.logging.Slf4jLogFilter)
+2018-05-24 01:23:35.891 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper]: AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addCommonsLogFilter(com.alibaba.druid.filter.logging.CommonsLogFilter)
+2018-05-24 01:23:35.891 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper]: AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addStatFilter(com.alibaba.druid.filter.stat.StatFilter)
+2018-05-24 01:23:35.891 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper]: AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addConfigFilter(com.alibaba.druid.filter.config.ConfigFilter)
+2018-05-24 01:23:35.891 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper]: AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addLog4jFilter(com.alibaba.druid.filter.logging.Log4jFilter)
+2018-05-24 01:23:35.892 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper]: AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addLog4j2Filter(com.alibaba.druid.filter.logging.Log4j2Filter)
+2018-05-24 01:23:35.892 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper]: AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addWallFilter(com.alibaba.druid.wall.WallFilter)
+2018-05-24 01:23:35.893 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'dataSource': AutowiredFieldElement for private org.springframework.boot.autoconfigure.jdbc.DataSourceProperties com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.basicProperties
+
+
+2018-05-24 01:23:35.940 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'dataSource': AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addSlf4jLogFilter(com.alibaba.druid.filter.logging.Slf4jLogFilter)
+2018-05-24 01:23:35.941 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'dataSource': AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addCommonsLogFilter(com.alibaba.druid.filter.logging.CommonsLogFilter)
+2018-05-24 01:23:35.942 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'dataSource': AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addStatFilter(com.alibaba.druid.filter.stat.StatFilter)
+2018-05-24 01:23:35.944 DEBUG 8176 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : Autowiring by type from bean name 'dataSource' to bean named 'statFilter'
+2018-05-24 01:23:35.944 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'dataSource': AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addConfigFilter(com.alibaba.druid.filter.config.ConfigFilter)
+2018-05-24 01:23:35.945 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'dataSource': AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addLog4jFilter(com.alibaba.druid.filter.logging.Log4jFilter)
+2018-05-24 01:23:35.946 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'dataSource': AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addLog4j2Filter(com.alibaba.druid.filter.logging.Log4j2Filter)
+2018-05-24 01:23:35.947 DEBUG 8176 --- [           main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'dataSource': AutowiredMethodElement for public void com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper.addWallFilter(com.alibaba.druid.wall.WallFilter)
+2018-05-24 01:23:36.019  INFO 8176 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+
+
+
+
+2018-05-24 01:23:37.515  INFO 8176 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-05-24 01:23:37.517  INFO 8176 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
